@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>ROB</title>
+    </head>
+    <body>
+	<style>
+
+	.center {
+	  margin: 0;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  -ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	}
+	.centerr {
+	  margin: 0;
+	  position: absolute;
+	  top: 110%;
+	  left: 50%;
+	  -ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	}
+	</style>
+        <form action = "http://127.0.0.1:5000/results" method = "POST">
+	<h1 style="text-align:center;font-family:Verdana">Buy Vs Rent</h1>
+	<br><br>
+	<h2 style="text-align:center;font-family:Times New Roman">This model has been built with the intention of providing an insight on whether you should buy<br> a car or consinder renting, using cab services, etc based on your usage.<br>As of now, just three factors are taken into account (cost of the car you wish to buy,<br> fuel type and average distance(in kilometres) to be travelled in a year).</h2>
+	<div class="center">
+         <p style="text-align:right;font-family:Copperplate Gothic Light;">Cost : <input type = "text" name = "cost" /></p>
+	 <p style="text-align:right;font-family:Copperplate Gothic Light;">Fuel : <input type = "text" name = "fuel" /></p>
+	 <p style="text-align:right;font-family:Copperplate Gothic Light;">Km/Yr : <input type = "text" name = "km" /></p>
+	 <div class="centerr"><button id="sub" type="submit ">Submit</button></div>
+	 </div></div>
+      </form>
+   </body>
+</html>
