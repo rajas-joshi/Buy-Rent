@@ -2,9 +2,10 @@
     <head>
         <title>ROB</title>
     </head>
-    <body>
+    <body style="background-image: url('https://www.carrevolution.com/Dealer-Websites/Car-Revolution-NJ/images/makes_bg.jpg');background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;">
 	<style>
-
 	.center {
 	  margin: 0;
 	  position: absolute;
@@ -16,7 +17,7 @@
 	.centerr {
 	  margin: 0;
 	  position: absolute;
-	  top: 110%;
+	  top: 102%;
 	  left: 50%;
 	  -ms-transform: translate(-50%, -50%);
 	  transform: translate(-50%, -50%);
@@ -27,15 +28,21 @@
 	<br><br>
 	<h2 style="text-align:center;font-family:Times New Roman">This model has been built with the intention of providing an insight on whether you should buy<br> a car or consinder renting, using cab services, etc based on your usage.<br>As of now, just three factors are taken into account (cost of the car you wish to buy,<br> fuel type and average distance(in kilometres) to be travelled in a year).</h2>
 	<div class="center">
-         <p style="text-align:right;font-family:Copperplate Gothic Light;">Cost : <input type = "text" name = "cost" /></p>
-	 <p style="text-align:right;font-family:Copperplate Gothic Light;">Fuel : <input type = "text" name = "fuel" /></p>
-	<select style="text-align:right;font-family:Copperplate Gothic Light;" name="fuel" id="fuel">
-  	<option value="Petrol">Petrol</option>
-  	<option value="Diesel">Diesel</option>
- 	<option value="CNG">CNG</option>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+         <p style="text-align:center;font-family:Copperplate Gothic Light;color:White;">Cost : <input type = "text" name = "cost" /><select style="text-align:center;font-family:Copperplate Gothic Light;height=30px" name="curr" id="curr">
+  	<option value="    INR(₹)    ">INR(₹)</option>
+  	<option value="    USD($)    ">USD($)</option>
+ 	<option value="    EUR(€)    ">EUR(€)</option>
+	</select></p>
+	 <p style="text-align:center;font-family:Copperplate Gothic Light;color:White;">Fuel : <select style="text-align:center;font-family:Copperplate Gothic Light;min-width:70%;" name="fuel" id="fuel">
+  	<option value="    Petrol    ">Petrol</option>
+  	<option value="    Diesel    ">Diesel</option>
+ 	<option value="     CNG      ">CNG</option>
 	</select>
-	 <p style="text-align:right;font-family:Copperplate Gothic Light;">Km/Yr : <input type = "text" name = "km" /></p>
-		<br><br>
+	 <p style="text-align:center;font-family:Copperplate Gothic Light;color:White;">Dist/Yr : <input type = "text" name = "km" /><select style="text-align:center;font-family:Copperplate Gothic Light;" name="dist" id="dist">
+  	<option value="    km    ">km</option>
+  	<option value="    miles    ">miles</option>
+	</select></p>
 	 <div class="centerr"><button id="sub" type="submit ">Submit</button></div>
 	 </div></div>
       </form>
