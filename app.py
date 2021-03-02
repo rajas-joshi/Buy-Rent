@@ -30,4 +30,4 @@ def results():
         return render_template('resultsform.html', result = res)
 
 if __name__=="__main__":
-    app.run(debug=true)
+    app.run(debug=True)
