@@ -10,7 +10,6 @@ entrypoints==0.3
 Flask==1.1.2
 future==0.18.2
 gunicorn==20.0.4
-ipykernel @ file:///C:/ci/ipykernel_1596190155316/work/dist/ipykernel-5.3.4-py3-none-any.whl
 itsdangerous==1.1.0
 joblib==1.0.1
 jsonify==0.5
@@ -26,7 +25,6 @@ parso==0.7.0
 pathspec==0.7.0
 Pillow==8.1.0
 pluggy==0.13.1
-ptyprocess @ file:///tmp/build/80754af9/ptyprocess_1609355006118/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl
 pywin32==227
 pywin32-ctypes==0.2.0
 pywinpty==0.5.7
