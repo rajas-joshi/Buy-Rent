@@ -23,7 +23,9 @@ def results():
         else:
             X = np.array([[0, 1, 0, cost, km]])
         res = model.predict(X)
-        if (res == 1):
+        if (cost <= 0 or fuel not in ['Petrol', 'Diesel','CNG'] or km <= 0):
+            res = "Invalid Input!"
+        elif (res == 1):
             res = "Based on the information given, renting a car will be a better alternative."
         else:
             res = "Based on the information given, buying a car will be a better alternative."
