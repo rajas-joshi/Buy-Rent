@@ -14,8 +14,16 @@ def show_predict():
 def results():
     if request.method == 'POST':
         cost = int(request.form['cost'])
+        dist = request.form['dist']
+        curr = request.form['curr']
         fuel = request.form['fuel']
         km = int(request.form['km'])
+        if (dist.lower() == 'miles'):
+            km = km*1.60934
+        if (curr == 'USD($)'):
+            cost = cost*73.36
+        elif(curr == 'EUR(€)'):
+            cost = cost*88.2
         if (fuel == 'Petrol'):
             X = np.array([[0, 0, 1, cost, km]])
         elif(fuel == 'Diesel'):
@@ -23,13 +31,13 @@ def results():
         else:
             X = np.array([[0, 1, 0, cost, km]])
         res = model.predict(X)
-        if (cost <= 0 or fuel not in ['Petrol', 'Diesel','CNG'] or km <= 0):
-            res = "Invalid Input!"
-        elif (res == 1):
-            res = "Based on the information given, renting a car will be a better alternative."
+        if (res == 1):
+            res = "Renting a car will be a better alternative."
+            return render_template('resultsformtaxi.html', result = res)
         else:
-            res = "Based on the information given, buying a car will be a better alternative."
-        return render_template('resultsform.html', result = res)
+            res = "Buying a car will be a better alternative."
+            return render_template('resultsformcar.html', result = res)
+        
 
 if __name__=="__main__":
-    app.run(debug=True)
+    app.run()
